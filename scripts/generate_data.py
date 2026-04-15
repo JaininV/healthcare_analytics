@@ -1,7 +1,7 @@
 """
 Healthcare Analytics Project — Phase 1: Dataset Generation
 Generates 4 CSV files with realistic dirty data injections.
-Output: data/raw/patients.csv, admissions.csv, claims.csv, readmissions.csv
+Output: D:/D/Projects/Healthcare Analytics/data/raw/patients.csv, admissions.csv, claims.csv, readmissions.csv
 """
 
 import os
@@ -16,7 +16,7 @@ Faker.seed(42)
 random.seed(42)
 np.random.seed(42)
 
-OUTPUT_DIR = "data/raw"
+OUTPUT_DIR = "D:/D/Projects/Healthcare Analytics/data/raw"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # ─────────────────────────────────────────────
