@@ -1,13 +1,84 @@
-# healthcare_analytics
-Project Title: Hospital Patient Records — Quality & Operations Analytics System
-What it is:
-This is an end-to-end data analytics project built on a synthetic hospital dataset of 413,000+ records across patient admissions, insurance claims, and readmission events. The project simulates the complete workflow of a professional healthcare data analyst — starting from raw, intentionally messy data all the way through to a polished Excel executive dashboard.
+Healthcare Claims Workflow & Readmission Analytics Pipeline
 
-Why it was built:
-Real hospital data is protected under privacy laws, so the dataset was generated using Python with realistic dirty data injected on purpose — things like invalid medical codes, duplicate patient records, billing errors, and date logic violations. This mirrors exactly the kind of data quality challenges analysts face when working with real Electronic Health Record systems.
+Built a Python + Excel analytics pipeline to validate and analyze healthcare insurance claims across 400K+ relational records spanning patients, admissions, claims, and readmissions datasets.
 
-What happens in the project:
-The pipeline runs in five phases. First the dataset is generated. Then a structured Python cleaning pipeline detects, logs, and resolves every data quality issue with a full audit trail. After cleaning, advanced analysis is performed — including a machine learning model to predict which patients are at risk of being readmitted within 30 days, a claims denial analysis to identify revenue leakage, and department-level operational insights. Finally, all results are exported into a structured Excel dashboard with 8 sheets covering KPIs, risk scoring, financial analytics, and a data quality scorecard.
+Project Objectives
 
-What it demonstrates:
-It shows the ability to work across the full data lifecycle — not just writing Python or building a dashboard in isolation, but connecting raw data generation, cleaning at scale, machine learning, auditing, and business reporting into one cohesive professional deliverable.
+This project simulates a real-world claims analytics workflow used by insurance operations and healthcare quality teams to:
+
+detect billing inconsistencies
+validate claim lifecycle logic
+monitor approval and denial trends
+analyze payer settlement efficiency
+evaluate 30-day hospital readmission risk patterns
+
+Dataset Overview
+Table	    Records
+Patients	10,000
+Admissions	200,000
+Claims	    200,000
+Readmissions	~3,000
+
+Intentional data quality issues were injected to simulate real operational datasets:
+
+invalid diagnosis codes
+orphan admissions
+negative LOS values
+approval > billed anomalies
+workflow timing violations
+Data Validation Pipeline
+
+Implemented automated integrity checks for:
+
+financial rule validation (approved ≤ billed)
+payment timing consistency
+diagnosis code formatting
+admission date logic
+orphan record detection
+LOS correction logic
+workflow readiness flags
+
+Result:
+
+96%+ analytics-ready admissions
+96%+ analytics-ready claims
+Claims Analytics KPIs Generated
+
+Calculated:
+
+approval rate (~50%)
+denial rate (~20%)
+pending rate (~20%)
+payout ratio by payer (~57%)
+denial reason distribution
+workflow readiness coverage
+Outcome Analytics (Hospital Readmissions)
+
+Analyzed:
+
+department-level readmission risk
+readmission cause distribution
+discharge-to-readmission timelines
+30-day readmission rate (~1.5%)
+
+Example insight:
+
+Most readmissions occurred in the 15–30 day window (~53%), indicating expected follow-up cycle behavior rather than early discharge failure patterns.
+
+Excel Dashboard
+
+Built an operational Excel dashboard summarizing:
+
+claim approval performance
+payer settlement efficiency
+denial drivers
+workflow readiness metrics
+
+Designed to simulate analyst reporting used in insurance claims operations environments.
+
+Tools Used
+
+Python
+Pandas
+NumPy
+Excel (operations dashboard reporting)
