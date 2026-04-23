@@ -1,73 +1,49 @@
-Healthcare Claims Workflow & Readmission Analytics Pipeline
+# Healthcare Claims Workflow & Readmission Analytics Pipeline
 
-Built a Python + Excel analytics pipeline to validate and analyze healthcare insurance claims across 400K+ relational records spanning patients, admissions, claims, and readmissions datasets.
+## Project Overview
+Built a Python and Excel analytics pipeline to validate and analyze healthcare claims, admissions, patients, and readmission data across 400K+ records.
 
-Project Objectives
-This project simulates a real-world claims analytics workflow used by insurance operations and healthcare quality teams to:
-detect billing inconsistencies
-validate claim lifecycle logic
-monitor approval and denial trends
-analyze payer settlement efficiency
-evaluate 30-day hospital readmission risk patterns
+## Objective
+Simulate a real claims analytics workflow by detecting billing errors, workflow anomalies, invalid diagnosis codes, orphan records, and readmission patterns.
 
-Dataset Overview
-Table	    Records
-Patients	10,000
-Admissions	200,000
-Claims	    200,000
-Readmissions	~3,000
+## Tools Used
+- Python
+- pandas
+- NumPy
+- Excel
+- openpyxl
+- Faker
 
-Intentional data quality issues were injected to simulate real operational datasets:
-invalid diagnosis codes
-orphan admissions
-negative LOS values
-approval > billed anomalies
-workflow timing violations
-Data Validation Pipeline
+## Dataset
+- Patients: 10,000+
+- Admissions: 200,000
+- Claims: 200,000
+- Readmissions: ~3,000
 
-Implemented automated integrity checks for:
-financial rule validation (approved ≤ billed)
-payment timing consistency
-diagnosis code formatting
-admission date logic
-orphan record detection
-LOS correction logic
-workflow readiness flags
+## Key Validation Checks
+- Approved amount greater than billed amount
+- Payment before submission date
+- Negative length of stay
+- Invalid ICD diagnosis codes
+- Orphan patient/admission records
+- Missing or suspicious diagnosis values
 
-Result:
-96%+ analytics-ready admissions
-96%+ analytics-ready claims
-Claims Analytics KPIs Generated
+## Key Outputs
+- 193K+ analytics-ready admissions
+- 192K+ analytics-ready claims
+- 1.54% simulated 30-day readmission rate
+- ~50% claim approval rate
+- ~20% denial rate
+- ~57–58% payout ratio by payer
+- Excel claims operations dashboard
 
-Calculated:
-approval rate (~50%)
-denial rate (~20%)
-pending rate (~20%)
-payout ratio by payer (~57%)
-denial reason distribution
-workflow readiness coverage
-Outcome Analytics (Hospital Readmissions)
+## Excel Dashboard
+The Excel dashboard summarizes:
+- claim status distribution
+- payer performance
+- denial reason analysis
+- workflow integrity monitoring
+- payout ratio by payer
 
-Analyzed:
-department-level readmission risk
-readmission cause distribution
-discharge-to-readmission timelines
-30-day readmission rate (~1.5%)
-
-Example insight:
-Most readmissions occurred in the 15–30 day window (~53%), indicating expected follow-up cycle behavior rather than early discharge failure patterns.
-
-Excel Dashboard
-Built an operational Excel dashboard summarizing:
-claim approval performance
-payer settlement efficiency
-denial drivers
-workflow readiness metrics
-
-Designed to simulate analyst reporting used in insurance claims operations environments.
-
-Tools Used
-Python
-Pandas
-NumPy
-Excel (operations dashboard reporting)
+## Project Value
+This project demonstrates data profiling, claims workflow validation, financial integrity checks, healthcare readmission analytics, and Excel-based operational reporting.
