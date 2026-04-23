@@ -1,13 +1,22 @@
-Load datasets
-
-Admissions cleaning
-
-Claims cleaning
-
-Analytics-ready flags
-
-Claims KPIs
-
-Excel export layer
-
-Readmission analytics  ← we start here next
+FLOW OF THE PROJECT
+        Load datasets
+            |
+        Admissions cleaning
+            |
+        Claims cleaning
+            |
+        Analytics-ready flags
+            |
+        Claims KPIs
+            |
+        Excel export layer
+            |
+        Readmission analytics
+            |
+        Add in Portfolio
+    
+Requirments
+pandas
+numpy
+openpyxl
+faker
