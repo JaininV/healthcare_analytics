@@ -1,0 +1,21 @@
+Application for Claims Support / Claims Analyst Opportunity
+
+Dear Hiring Team,
+
+I am writing to express my interest in opportunities within your Claims team at Masters Insurance. I recently completed post-secondary training in Artificial Intelligence & Data Science and have developed strong experience working with large datasets, Excel reporting, and workflow validation through both academic and practical projects.
+
+As part of my recent portfolio work, I built a healthcare claims analytics pipeline processing over 400K records to identify billing inconsistencies, workflow anomalies, settlement patterns, and denial drivers using Python and Excel dashboards. This strengthened my ability to monitor claim progress, validate documentation accuracy, and maintain structured electronic claim data—skills directly aligned with the responsibilities outlined for this role.
+
+Alongside my technical experience, my customer-facing roles with the Toronto Transit Commission and Fat Bastard Burrito strengthened my communication, coordination, and problem-resolution skills in fast-paced environments.
+
+I would welcome the opportunity to contribute to your Claims team and continue developing within the insurance field. I have attached my resume for your review and would be happy to discuss how my background can support your operations.
+
+Thank you for your time and consideration.
+
+Sincerely,
+Jainin Vekariya
+Toronto, ON
++1 (437) 799-8803
+jaininvekariya@gmail.com
+LinkedIn: https://www.linkedin.com/in/jaininvekariya
+GitHub: https://github.com/JaininV
