@@ -1,4 +1,5 @@
 # Healthcare Claims Workflow & Readmission Analytics Pipeline
+This project simulates a real-world healthcare insurance claims analytics workflow used by claims analysts to validate claim lifecycle integrity, monitor settlement efficiency, and identify outcome-quality patterns.
 
 ## Project Overview
 Built a Python and Excel analytics pipeline to validate and analyze healthcare claims, admissions, patients, and readmission data across 400K+ records.
